@@ -18,6 +18,7 @@ public class ScoreModel {
     @Column(name = "id_score")
     private int idScore;
 
+    @Column(name = "vvalue")
     private Float value;
 
     @OneToOne(cascade = CascadeType.MERGE)
