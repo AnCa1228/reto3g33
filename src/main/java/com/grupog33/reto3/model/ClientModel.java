@@ -25,11 +25,11 @@ public class ClientModel {
     @Column(length = 45)
     private String password;
 
-    @Column(length = 3)
-    private byte age;
-
     @Column(length = 250)
     private String name;
+
+    @Column(length = 3)
+    private byte age;
 
     @OneToMany(cascade = CascadeType.MERGE, mappedBy = "client")
     private List<MessageModel> messages;
